@@ -1,0 +1,12 @@
+{
+  "name": "educatioNowMobile",
+  "displayName": "educatioNowMobile",
+  "expo": {
+    "name": "educatioNowMobile",
+    "slug": "educatioNowMobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
