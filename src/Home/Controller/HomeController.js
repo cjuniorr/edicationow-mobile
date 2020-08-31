@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeView from '../View/HomeView'
-import  HomeModel from '../Model/HomeModel'
+import HomeModel from '../Model/HomeModel'
 
 class HomeController extends React.Component {
     constructor() {
