@@ -1,8 +1,9 @@
 import React from 'react'
 import HomeView from '../View/DetailView'
+import DefaultController from '../../component/DefaultController/DefaultController'
 
-export default class DetailController extends React.Component {
+export default class DetailController extends DefaultController {
     render = () => {
-        <DetailView />
+        return <DetailView />
     }
 }

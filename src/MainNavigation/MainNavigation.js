@@ -5,12 +5,16 @@ import { createAppContainer } from 'react-navigation'
 
 import HomeController from '../Home/Controller/HomeController'
 import DetailController from '../Detail/Controller/DetailController'
+import SideMenuController from '../SideMenu/Controller/SideMenuController'
 
 const AppLogged = createDrawerNavigator({
     Places: createStackNavigator({
         Home: HomeController,
         Detail: DetailController
     })
+},{
+    initialRouteName: "Places",
+    contentComponent: SideMenuController
 })
 
 const AppContainer = createAppContainer(AppLogged)
