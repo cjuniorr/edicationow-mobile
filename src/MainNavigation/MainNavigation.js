@@ -16,9 +16,7 @@ const AppLogged = createDrawerNavigator({
 const AppContainer = createAppContainer(AppLogged)
 
 export default class MainNavigation extends React.Component {
-    render() {
-        return (
-            <AppContainer />
-        )
+    render = () => {
+        return <AppContainer />
     }
 }
