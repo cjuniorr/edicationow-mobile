@@ -9,5 +9,29 @@ export default StyleSheet.create({
     textInfo: {
         fontSize: 30,
         textAlign: 'center'
-    }
+    },
+
+    boxContent: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-evenly'
+    },
+    box1: {
+        backgroundColor: 'red',
+        // flex: 1,
+        height: 50,
+        width: 50
+    },
+    box2: {
+        backgroundColor: 'blue',
+        // flex: 2,
+        height: 50,
+        width: 50
+    },
+    box3: {
+        backgroundColor: 'green',
+        // flex: 3,
+        height: 50,
+        width: 50
+    },
 })
