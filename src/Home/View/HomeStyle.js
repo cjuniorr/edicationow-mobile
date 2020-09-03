@@ -14,7 +14,9 @@ export default StyleSheet.create({
     boxContent: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-evenly'
+        // justifyContent: 'space-evenly',
+        flexWrap: 'wrap',
+        alignContent: 'center'
     },
     box1: {
         backgroundColor: 'red',

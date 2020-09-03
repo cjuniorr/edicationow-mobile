@@ -14,6 +14,12 @@ const HomeView = () => {
             <View style={styles.box1}></View>
             <View style={styles.box2}></View>
             <View style={styles.box3}></View>
+            <View style={styles.box1}></View>
+            <View style={styles.box2}></View>
+            <View style={styles.box3}></View>
+            <View style={styles.box1}></View>
+            <View style={styles.box2}></View>
+            <View style={styles.box3}></View>
         </View>
     )
 }
