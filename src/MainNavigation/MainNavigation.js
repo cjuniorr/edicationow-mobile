@@ -10,8 +10,8 @@ import LoginController from '../Login/Controller/LoginController'
 
 const AppLogged = createDrawerNavigator({
     Places: createStackNavigator({
-        // Home: HomeController,
         Login: LoginController,
+        Home: HomeController,
         Detail: DetailController
     })
 },{
