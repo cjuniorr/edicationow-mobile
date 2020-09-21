@@ -6,10 +6,12 @@ import { createAppContainer } from 'react-navigation'
 import HomeController from '../Home/Controller/HomeController'
 import DetailController from '../Detail/Controller/DetailController'
 import SideMenuController from '../SideMenu/Controller/SideMenuController'
+import LoginController from '../Login/Controller/LoginController'
 
 const AppLogged = createDrawerNavigator({
     Places: createStackNavigator({
-        Home: HomeController,
+        // Home: HomeController,
+        Login: LoginController,
         Detail: DetailController
     })
 },{
