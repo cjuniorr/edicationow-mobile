@@ -1,12 +1,26 @@
-import { registerRootComponent } from 'expo';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-// import App from './App';
-// import HomeController from './src/Home/Controller/HomeController'
-import MainNavigation from './src/MainNavigation/MainNavigation';
+import {
+  HomeScreen,
+  LoginScreen,
+  RegisterScreen,
+  ForgotPasswordScreen,
+  Dashboard,
+} from './src/screens';
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in the Expo client or in a native build,
-// // the environment is set up appropriately
-// registerRootComponent(App);
+const Router = createStackNavigator(
+  {
+    HomeScreen,
+    LoginScreen,
+    RegisterScreen,
+    ForgotPasswordScreen,
+    Dashboard,
+  },
+  {
+    initialRouteName: 'HomeScreen',
+    headerMode: 'none',
+  }
+);
 
-registerRootComponent(MainNavigation);
+export default createAppContainer(Router);
