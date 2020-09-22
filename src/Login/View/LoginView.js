@@ -7,18 +7,7 @@ const LoginView = (props) => {
     console.log('navigation eh:' + props.navigation)
     console.log(props.navigation)
 
-    function Navega (){
-        console.log(props.navigation)
-        props.navigation.dispatch(
-            NavigationActions.navigate({ routeName: 'Home' })
-        )
-        // props.navigation.navigate('Home')
-
-    }
-
     return (
-
- 
         <View style={styles.main}>
             <View style={styles.container}>
                 <TextInput styles={styles.input} placeholder={"Adicione o login"} type="email"></TextInput>
