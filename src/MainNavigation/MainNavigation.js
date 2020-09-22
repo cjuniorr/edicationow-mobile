@@ -8,21 +8,25 @@ import DetailController from '../Detail/Controller/DetailController'
 import SideMenuController from '../SideMenu/Controller/SideMenuController'
 import LoginController from '../Login/Controller/LoginController'
 
-const AppLogged = createDrawerNavigator({
-    Places: createStackNavigator({
-        Login: LoginController,
-        Home: HomeController,
-        Detail: DetailController
-    })
+const AppLogged = createStackNavigator({
+    Login: {
+        screen: LoginController
+    },
+    Home: {
+        screen: HomeController
+    }
 },{
-    initialRouteName: "Places",
-    contentComponent: SideMenuController
+    initialRouteName: 'Login'
 })
 
 const AppContainer = createAppContainer(AppLogged)
 
-export default class MainNavigation extends React.Component {
-    render = () => {
-        return <AppContainer />
-    }
+const MainNavigation = () => {
+    let navigator = null
+
+    return (
+        <AppContainer ref={ (nav) => { navigator = nav } }/>
+    )
 }
+
+export default MainNavigation
