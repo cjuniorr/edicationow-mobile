@@ -1,8 +1,9 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button } from 'react-native'
 import styles from './HomeStyle'
+import { NavigationContainer  } from '@react-navigation/native'
 
-const HomeView = () => {
+const HomeView = ({ navigation }) => {
     return (
         <View>
             <View style={styles.boxContent, styles.boxBorder}>
@@ -43,8 +44,10 @@ const HomeView = () => {
                     </View>
                 </View>
             </View>
+            <View>
+                <Button title='Detalhes' onPress={() => navigation.navigate('Login')} ></Button>
+            </View>
         </View>
-
     )
 }
 
