@@ -12,14 +12,12 @@ const LoginView = (props) => {
             <View style={styles.container}>
                 <TextInput styles={styles.input} placeholder={"Adicione o login"} type="email"></TextInput>
                 <TextInput styles={styles.input} placeholder={"Adicione a senha"} secureTextEntry></TextInput>
-                {/* <TouchableOpacity style={styles.btn}>
-                    <Text>TESTE</Text>
-                </TouchableOpacity> */}
-
-                {/* <Button title='Login' onPress={() => console.log('clicou')}> */}
-                <Button title='Login' onPress={() => Navega()}>
-                    <Text>Teste111</Text>
-                </Button>
+                
+                <View style={{ flex: 3, alignItems: "center", justifyContent:"center"}}>
+                    <Button title='Login' onPress={() => Navega()}>
+                        <Text>Teste111</Text>
+                    </Button>
+                </View>
             </View>
         </View>
     )

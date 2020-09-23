@@ -5,7 +5,6 @@ export default StyleSheet.create({
         flexDirection: 'column',
         left: 5,
         fontSize: 50,
-
     },
     boxBorder: {
         top: 5,

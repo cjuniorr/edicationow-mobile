@@ -5,7 +5,7 @@ import { NavigationContainer  } from '@react-navigation/native'
 
 const HomeView = ({ navigation }) => {
     return (
-        <View>
+        <View style={{paddingLeft: 10, paddingRight: 10}}>
             <View style={styles.boxContent, styles.boxBorder}>
                 <View style={styles.container}>
                     <View style={styles.boxContent}>
