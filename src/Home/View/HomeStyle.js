@@ -1,39 +1,42 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-    container: {
-        flexDirection: 'column',
-        flex: 1,
-        justifyContent: 'center'
-    },
-    textInfo: {
-        fontSize: 30,
-        textAlign: 'center'
-    },
-
     boxContent: {
-        flex: 1,
+        flexDirection: 'column',
+        left: 5,
+        fontSize: 50,
+    },
+    boxBorder: {
+        top: 5,
+        paddingBottom: 5,
+        borderColor: '#ccc',
+        borderRadius: 2,
+        borderWidth: 1,
+    },
+    container: {
         flexDirection: 'row',
-        // justifyContent: 'space-evenly',
-        flexWrap: 'wrap',
-        alignContent: 'center'
+        paddingBottom: 2,
+        
+
     },
-    box1: {
-        backgroundColor: 'red',
-        // flex: 1,
-        height: 50,
-        width: 50
+    boxAvatar: {
+        alignContent: 'center',
+        justifyContent: 'center',
+        width: 60,
+        height: 20,
+        left: 10,
     },
-    box2: {
-        backgroundColor: 'blue',
-        // flex: 2,
-        height: 50,
-        width: 50
+    boxName: {
+        width: 181,
+        height: 20,
+        left: 10,
     },
-    box3: {
-        backgroundColor: 'green',
-        // flex: 3,
-        height: 50,
-        width: 50
+    boxSchool: {
+        width: 181,
+        height: 20,
+        left: 10,
     },
-})
+    cRed: {backgroundColor: 'red',},
+    cBlue: {backgroundColor: 'blue',},
+    CGreen: {backgroundColor: 'green',},
+});
